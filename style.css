@@ -1,0 +1,121 @@
+#main,
+.hidden {
+    width: 65vw;
+    text-align: center;
+    margin: auto;
+    border: 2px black dotted;
+}
+
+.hidden {
+    display: none;
+}
+
+#main ul {
+    padding-left: 0px;
+    list-style-position: inside;
+}
+
+.author {
+    font-weight: normal;
+}
+
+#guide,
+#auto-import,
+#manual-import {
+    background-color: rgb(161, 53, 53);
+    border: none;
+    font-size: 24px;
+    display: inline-block;
+    padding: 15px 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#back,
+#back2 {
+    font-size: 14px;
+    padding: 8px 15px;
+    text-align: left;
+    left: 17.9vw;
+    top: 2.5vh;
+    position: absolute;
+}
+
+.next {
+    font-size: 14px;
+    padding: 8px 15px;
+    text-align: left;
+    right: 17.9vw;
+    bottom: 2.5vh;
+    position: fixed;
+}
+
+#warning-m,
+#warning-a {
+    position: absolute;
+    right: 28vw;
+    top: 90vh;
+    color: rgb(145, 11, 11);
+}
+
+#auto-import,
+#manual-import {
+    width: 22vw;
+}
+
+#buttons {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 10vw;
+}
+
+#manual-grades {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5vw;
+}
+
+div div h4 {
+    text-decoration-line: underline;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+
+#prepares,
+#rehearses,
+#performs {
+    border: 1px black solid;
+    width: 13vw;
+    max-height: 50.5vh;
+    overflow-y: auto;
+}
+
+.grades::-webkit-inner-spin-button,
+.grades::-webkit-outer-spin-button {
+    /* removes arrows on input fields */
+    appearance: none;
+}
+
+.add-item {
+    margin-bottom: 6px;
+}
+
+#grades-final {
+    display: flex;
+    justify-content: center;
+}
+
+#prepares-final,
+#rehearses-final,
+#performs-final {
+    width: 15vw;
+    text-align: center;
+}
+
+#grades-a {
+    resize: none;
+    width: 50vw;
+    height: 40vh;
+}
