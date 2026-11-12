@@ -48,5 +48,18 @@ function manualCalculate() {
 
 function autoCalculate() {
     // grab the input, split it, grab the category and grades
-    return;
+    let prepareAvg = 0, rehearseAvg = 0, performAvg = 0, midterm = null
+
+    let input = document.getElementById("grades-a").value
+    let categories = input.split("Mid-Term Final Grade\n")
+    categories[1] = categories[1].split("Perform\n")
+    categories[1][1] = categories[1][1].split("Prepare\n")
+    categories[1][1][1] = categories[1][1][1].split("Rehearse\n")
+    categories = categories.flat(3)
+
+    for (let i = 0; i < categories.length; i++) {
+        let assignments = categories[i].split("Assignment").map((x) => (x.trim()))
+    }
+
+    
 }
